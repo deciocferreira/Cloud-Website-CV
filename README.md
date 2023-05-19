@@ -6,6 +6,10 @@
 
 Desenvolvimento de um website (html, css, imagens) contendo os currículos do grupo e a implantação de um ou mais serviços na nuvem AWS, com rede de entrega de conteúdo, com baixa latência, com segurança, e armazenamento durável, para atender a demanda de 11 milhões de requisições por mês.  
   
+## Arquitetura
+
+<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/45d075a4-03a4-42c2-9be1-686804571671" width="700" height="500">    
+  
 ## Fluxo da arquitetura
 - O usuário acessa o website e faz uma solicitação de uma página HTML, imagem ou currículo.
 - O DNS do domínio é gerenciado pelo Amazon Route 53.
