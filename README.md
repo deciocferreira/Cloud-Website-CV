@@ -2,14 +2,28 @@
   
 ## Proposta de arquitetura para hospedagem de um WebSite na AWS.
   
+## Tecnologias utilizadas  
+  
+- Amazon CloudFront
+
+- Amazon Route 53
+  
+- Amazon S3 
+
+- Internet Gateway
+
+- VPC
+
+- Route Table  
+  
 ## Objetivo
 
 Desenvolvimento de um website (html, css, imagens) contendo os currículos do grupo e a implantação de um ou mais serviços na nuvem AWS, com rede de entrega de conteúdo, com baixa latência, com segurança, e armazenamento durável, para atender a demanda de 11 milhões de requisições por mês.  
   
 ## Arquitetura
 
-<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/7803f00b-011d-48ed-9538-37fd9a9bfb4b" width="600" height="350">      
-  
+<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/681a3828-7e0b-4700-9bbe-995d74e1fe4c" width="800" height="300">    
+   
 ## Fluxo da arquitetura
 - O usuário acessa o website e faz uma solicitação de uma página HTML, imagem ou currículo.
 - O DNS do domínio é gerenciado pelo Amazon Route 53.
@@ -24,6 +38,4 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
 
 > O Amazon Route 53 desempenha um papel fundamental na rota do tráfego do usuário para o CloudFront. Ele gerencia o DNS do domínio, garantindo que as solicitações sejam direcionadas corretamente para o CloudFront. Isso permite que o CloudFront atue como uma camada de cache global, entregando o conteúdo com baixa latência a partir do ponto de presença mais próximo do usuário.
   
-## Tecnologias utilizadas  
-  
-## Proposta  
+## Proposta 
