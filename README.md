@@ -22,8 +22,8 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
   
 ## Arquitetura
 
-<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/681a3828-7e0b-4700-9bbe-995d74e1fe4c" width="800" height="300">    
-   
+<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/1c71e7e4-ce80-4c97-ab41-c2e28319f689" width="800" height="300">   
+     
 ## Fluxo da arquitetura
 - O usuário acessa o website e faz uma solicitação de uma página HTML, imagem ou currículo.
 - O DNS do domínio é gerenciado pelo Amazon Route 53.
