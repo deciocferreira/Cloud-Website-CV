@@ -10,6 +10,8 @@
   
 - Amazon S3 
   
+- Amazon Cloud Watch
+  
 ## Objetivo
 
 Desenvolvimento de um website (html, css, imagens) contendo os currículos do grupo e a implantação de um ou mais serviços na nuvem AWS, com rede de entrega de conteúdo, com baixa latência, com segurança, e armazenamento durável, para atender a demanda de 11 milhões de requisições por mês.  
@@ -29,7 +31,6 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
 - O CloudFront recebe o conteúdo do S3 e, opcionalmente, pode aplicar funcionalidades adicionais, como compressão, redimensionamento de imagens ou autenticação, dependendo da configuração definida.
 - O CloudFront entrega o conteúdo ao usuário através de um ponto de presença próximo geograficamente, minimizando a latência e proporcionando uma experiência mais rápida de carregamento de página.
 - O usuário recebe o conteúdo solicitado e pode visualizar a página HTML, imagem ou currículo.
+- O CloudWatch realiza monitoramento básico dos recursos para informar caso algo fora no padrão possa acontecer.
 
 > O Amazon Route 53 desempenha um papel fundamental na rota do tráfego do usuário para o CloudFront. Ele gerencia o DNS do domínio, garantindo que as solicitações sejam direcionadas corretamente para o CloudFront. Isso permite que o CloudFront atue como uma camada de cache global, entregando o conteúdo com baixa latência a partir do ponto de presença mais próximo do usuário.
-  
-## Proposta 
