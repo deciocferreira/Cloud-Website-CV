@@ -9,12 +9,6 @@
 - Amazon Route 53
   
 - Amazon S3 
-
-- Internet Gateway
-
-- VPC
-
-- Route Table  
   
 ## Objetivo
 
