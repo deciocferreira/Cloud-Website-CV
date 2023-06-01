@@ -10,7 +10,7 @@
   
 - Amazon S3 
   
-- Amazon Cloud Watch
+- Amazon CloudWatch
   
 ## Objetivo
 
