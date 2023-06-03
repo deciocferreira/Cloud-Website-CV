@@ -18,7 +18,7 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
   
 ## Arquitetura
 
-<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/522aba52-7726-4449-b8a4-55b9ec64675b" width="800" height="500">
+<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/bc8efa3b-5ed5-4e40-bc62-a46ec14d595c" width="800" height="500">
        
 ## Fluxo da arquitetura
 - O usuário acessa o website e faz uma solicitação de uma página HTML, imagem ou currículo.
