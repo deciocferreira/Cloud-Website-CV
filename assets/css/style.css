@@ -122,7 +122,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 #header.header-scrolled,
@@ -238,7 +238,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 0px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
 
@@ -513,15 +513,15 @@ section {
 }
 
 .section-title {
-  padding-bottom: 40px;
+  
 }
 
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
-  padding: 0;
+  padding: 15px;
   line-height: 1px;
-  margin: 0 0 5px 0;
+  margin: 0 0 px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
@@ -546,6 +546,35 @@ section {
   font-family: "Poppins", sans-serif;
   color: #151515;
 }
+
+.social a {
+  transition: color 0.3s;
+  color: #151515;
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: ease-in-out 0.3s;
+  color: #484848;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a:hover {
+  color: #151515;
+  background: #ffc451;
+}
+
+.social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Footer
