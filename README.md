@@ -22,19 +22,22 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
   
 ## Arquitetura
 
-<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/b5a2b33c-0863-42c5-9add-e58b99119e0f" width="700" height="600">
+<image src="https://github.com/deciocferreira/Cloud-Website-CV/assets/12403699/b5a2b33c-0863-42c5-9add-e58b99119e0f" width="900" height="700">
              
 ## Fluxo da arquitetura
-- O usuário acessa o website e faz uma solicitação de uma página HTML, imagem ou currículo.
-- O DNS do domínio é gerenciado pelo Amazon Route 53.
-- O Route 53 recebe a solicitação e direciona o tráfego para o Amazon CloudFront.
-- O CloudFront atua como uma CDN (Content Delivery Network) e possui pontos de presença globalmente distribuídos.
-- O CloudFront verifica se possui uma cópia em cache do conteúdo solicitado nos seus pontos de presença. Se tiver, ele entrega o conteúdo diretamente ao usuário, reduzindo a latência. 
-  - Se o CloudFront não tiver uma cópia em cache do conteúdo solicitado, ele faz uma solicitação ao Amazon S3, onde os arquivos HTML, CSS, imagens e currículos estão armazenados.
-- O Amazon S3 retorna o conteúdo solicitado para o CloudFront.
-- O CloudFront recebe o conteúdo do S3 e, opcionalmente, pode aplicar funcionalidades adicionais, como compressão, redimensionamento de imagens ou autenticação, dependendo da configuração definida.
-- O CloudFront entrega o conteúdo ao usuário através de um ponto de presença próximo geograficamente, minimizando a latência e proporcionando uma experiência mais rápida de carregamento de página.
-- O usuário recebe o conteúdo solicitado e pode visualizar a página HTML, imagem ou currículo.
-- O CloudWatch realiza monitoramento básico dos recursos para informar caso algo fora no padrão possa acontecer.
+-	O usuário faz uma solicitação para acessar um website estático que contém os currículos.
+-	O Amazon Route 53 faz o trabalho de DNS garantindo o direcionamento correto do tráfego e registro do domínio personalizado grupo3aws.xyz.
+-	Depois, o tráfego é direcionado para o Amazon CloudFront, que atua como uma CDN (Content Delivery Network) e vai no Amazon S3 para acessar o conteúdo para retornar para o usuário.
+-	O ACM gerencia um certificado gratuito que importamos para ser usado pelo Cloudfront.
+-	Além disso, o CloudWatch, realiza um monitoramento básico dos recursos para informar caso algo fora do padrão ocorra. Ele está presente para nos fornecer insights valiosos e nos alertar caso surjam problemas.
+-	Na segurança, o Amazon Shield Standard é habilitado por padrão quando configuramos o CloudFront e Route53, assim garantindo análise de ameaças e proteção de ataques DDOS, já que a aplicação é acessada globalmente.
 
-> O Amazon Route 53 desempenha um papel fundamental na rota do tráfego do usuário para o CloudFront. Ele gerencia o DNS do domínio, garantindo que as solicitações sejam direcionadas corretamente para o CloudFront. Isso permite que o CloudFront atue como uma camada de cache global, entregando o conteúdo com baixa latência a partir do ponto de presença mais próximo do usuário.
+## Proposta
+  
+Custo mensal: US$ 2,80
+
+Custo anual: US$ 33,60
+
+Calculadora: https://calculator.aws/#/estimate?id=0115ff284c737438bcc7a28e23e8ac8d7aa8ff66
+
+Custo de domínio personalizado: R$10,94  
